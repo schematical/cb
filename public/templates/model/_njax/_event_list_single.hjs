@@ -1,0 +1,46 @@
+<tr>
+    
+    
+    <td>
+        {{ event_namespace }}
+    </td>
+    
+
+    
+    
+    <td>
+        {{ short_namespace }}
+    </td>
+    
+
+    
+    
+    <td>
+        {{ entity_url }}
+    </td>
+    
+
+    
+    
+    <td>
+        {{ data }}
+    </td>
+    
+
+    
+    
+    <td>
+        {{ application }}
+    </td>
+    
+
+    
+    
+    <td>
+        {{ accounts }}
+    </td>
+    
+
+    
+    
+</tr>

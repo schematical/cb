@@ -1,0 +1,55 @@
+{{> _header }}
+{{> _navbar }}
+<div class="page-header">
+    <h1>{{ vendor.name }}<small>{{{ vendor.desc }}}</small></h1>
+</div>
+
+    <h3>Name</h3>
+    
+        {{ vendor.name }}
+    
+
+    <h3>Namespace</h3>
+    
+        {{ vendor.namespace }}
+    
+
+    <h3>Desc</h3>
+    
+        {{{ vendor.desc }}}
+    
+
+    <h3>Original_img</h3>
+    
+        <img src="{{{ vendor.original_img_s3.url }}}" />
+    
+
+    <h3>Thumb_img</h3>
+    
+        <img src="{{{ vendor.thumb_img_s3.url }}}" />
+    
+
+    <h3>Website_url</h3>
+    
+        {{ vendor.website_url }}
+    
+
+    <h3>City</h3>
+    
+        {{ vendor.city }}
+    
+
+    <h3>Account</h3>
+    
+        {{ vendor.account }}
+    
+
+    <h3>ArchiveDate</h3>
+    
+        {{ vendor.archiveDate }}
+    
+
+<a class='btn btn-default btn-sm' href='{{ vendor.uri }}/edit'>
+    Edit
+</a>
+{{> _footer }}

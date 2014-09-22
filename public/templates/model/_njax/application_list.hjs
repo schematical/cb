@@ -1,0 +1,82 @@
+{{> _header }}
+
+{{> _navbar }}
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            {{> _application_edit_form }}
+        </div>
+        <div class="col-md-8 col-md-offset-1">
+            <table class="table">
+                <tr>
+                    
+                        
+                            <th>
+                                namespace
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                name
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                desc
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                app_url
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                domain
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                secret
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                level
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                callback_url
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                iframes
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                owner
+                            </th>
+                        
+                    
+                </tr>
+                {{# applications }}
+                  {{> _application_list_single }}
+                {{/ applications }}
+            </table>
+        </div>
+    </div>
+</div>
+{{> _footer }}
+

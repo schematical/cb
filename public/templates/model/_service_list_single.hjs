@@ -1,0 +1,66 @@
+<tr>
+    
+    
+    <td>
+        {{ name }}
+    </td>
+    
+
+    
+    
+    <td>
+        {{ namespace }}
+    </td>
+    
+
+    
+    
+    <td>
+        {{{ desc }}}
+    </td>
+    
+
+    
+    
+    <td>
+        {{ original_img }}
+    </td>
+    
+
+    
+    
+    <td>
+        {{ thumb_img }}
+    </td>
+    
+
+    
+    
+    <td>
+        {{ website_url }}
+    </td>
+    
+
+    
+    
+    <td>
+        {{ vendor }}
+    </td>
+    
+
+    
+    
+    <td>
+        {{ archiveDate }}
+    </td>
+    
+
+    
+    
+    <td>
+        <a class='btn btn-default btn-sm' href='{{ uri }}'>
+            View
+        </a>
+    </td>
+    
+</tr>

@@ -1,0 +1,40 @@
+{{> _header }}
+{{> _navbar }}
+<div class="page-header">
+    <h1>{{ event.name }}<small>{{{ event.desc }}}</small></h1>
+</div>
+
+    <h3>Event_namespace</h3>
+    
+        {{ event.event_namespace }}
+    
+
+    <h3>Short_namespace</h3>
+    
+        {{ event.short_namespace }}
+    
+
+    <h3>Entity_url</h3>
+    
+        {{ event.entity_url }}
+    
+
+    <h3>Data</h3>
+    
+        {{ event.data }}
+    
+
+    <h3>Application</h3>
+    
+        {{ event.application }}
+    
+
+    <h3>Accounts</h3>
+    
+        {{ event.accounts }}
+    
+
+<a class='btn btn-default btn-sm' href='{{ event.uri }}/edit'>
+    Edit
+</a>
+{{> _footer }}

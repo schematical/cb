@@ -1,0 +1,58 @@
+{{> _header }}
+
+{{> _navbar }}
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            {{> _event_edit_form }}
+        </div>
+        <div class="col-md-8 col-md-offset-1">
+            <table class="table">
+                <tr>
+                    
+                        
+                            <th>
+                                event_namespace
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                short_namespace
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                entity_url
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                data
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                application
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                accounts
+                            </th>
+                        
+                    
+                </tr>
+                {{# events }}
+                  {{> _event_list_single }}
+                {{/ events }}
+            </table>
+        </div>
+    </div>
+</div>
+{{> _footer }}
+

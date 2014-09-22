@@ -1,0 +1,81 @@
+
+
+<form role="form" action='/apps/{{ application._id }}' method='POST' enctype="multipart/form-data"  ng-controller="applicationEditForm">
+    
+        
+            <div class="form-group">
+                <label for="namespace">namespace</label>
+                <input name="namespace" type="namespace" class="form-control" id="namespace" placeholder="Enter namespace" value="{{ application.namespace }}"  ng-model="namespace">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="name">name</label>
+                <input name="name" type="name" class="form-control" id="name" placeholder="Enter name" value="{{ application.name }}"  ng-model="name">
+            </div>
+        
+    
+        
+            <textarea id="desc" name="desc" class="form-control" rows="3"  ng-model="desc">{{ application.desc}}</textarea>
+        
+    
+        
+            <div class="form-group">
+                <label for="app_url">app_url</label>
+                <input name="app_url" type="app_url" class="form-control" id="app_url" placeholder="Enter app_url" value="{{ application.app_url }}"  ng-model="app_url">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="domain">domain</label>
+                <input name="domain" type="domain" class="form-control" id="domain" placeholder="Enter domain" value="{{ application.domain }}"  ng-model="domain">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="secret">secret</label>
+                <input name="secret" type="secret" class="form-control" id="secret" placeholder="Enter secret" value="{{ application.secret }}"  ng-model="secret">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="level">level</label>
+                <input name="level" type="level" class="form-control" id="level" placeholder="Enter level" value="{{ application.level }}"  ng-model="level">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="callback_url">callback_url</label>
+                <input name="callback_url" type="callback_url" class="form-control" id="callback_url" placeholder="Enter callback_url" value="{{ application.callback_url }}"  ng-model="callback_url">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="iframes">iframes</label>
+                <input name="iframes" type="iframes" class="form-control" id="iframes" placeholder="Enter iframes" value="{{ application.iframes }}"  ng-model="iframes">
+            </div>
+        
+    
+        
+            {{^ account }}
+            <div class="form-group">
+                <label for="owner">owner</label>
+                <select id="owner" name='owner' value='{{ application.owner }}'  ng-model="owner">
+                    {{# owners }}
+                        <option {{# _selected }}selected='true'{{/ _selected}} value='{{ _id }}'>{{ name }}</option>
+                    {{/ owners }}
+                </select>
+            </div>
+             {{/ account }}
+        
+    
+
+
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>

@@ -1,0 +1,32 @@
+<tr>
+    
+    
+    <td>
+        {{ perms }}
+    </td>
+    
+
+    
+    
+    <td>
+        {{ token }}
+    </td>
+    
+
+    
+    
+    <td>
+        {{ application }}
+    </td>
+    
+
+    
+    
+    <td>
+        {{ account }}
+    </td>
+    
+
+    
+    
+</tr>

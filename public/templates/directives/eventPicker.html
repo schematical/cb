@@ -1,0 +1,21 @@
+<div class="form-group">
+    <label><i class="fa fa-globe"></i> event</label>
+    <div class="input-group">
+
+        <input type="text" class="form-control" ng-model="selectedEvent" ng-options="event as event.name for event in events" placeholder="Enter event" bs-typeahead>
+        <div class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="addSkill();" >Add</button>
+        </div><!-- /btn-group -->
+    </div><!-- /input-group -->
+
+    <input type="hidden" name="{{ ele_name }}" ng-value="selectedEvent._id" />
+
+    <div class="input-group" ng-repeat="entitySkill in entitySkills">
+
+        <input type="text" class="form-control" ng-model="entitySkill.name" >
+        <div class="input-group-btn">
+            <button type="button" class="btn btn-danger"  ng-click="removeSkill(entitySkill);" >Remove</button>
+        </div><!-- /btn-group -->
+    </div><!-- /input-group -->
+
+</div>

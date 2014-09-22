@@ -1,0 +1,50 @@
+{{> _header }}
+{{> _navbar }}
+<div class="page-header">
+    <h1>{{ service.name }}<small>{{{ service.desc }}}</small></h1>
+</div>
+
+    <h3>Name</h3>
+    
+        {{ service.name }}
+    
+
+    <h3>Namespace</h3>
+    
+        {{ service.namespace }}
+    
+
+    <h3>Desc</h3>
+    
+        {{{ service.desc }}}
+    
+
+    <h3>Original_img</h3>
+    
+        <img src="{{{ service.original_img_s3.url }}}" />
+    
+
+    <h3>Thumb_img</h3>
+    
+        <img src="{{{ service.thumb_img_s3.url }}}" />
+    
+
+    <h3>Website_url</h3>
+    
+        {{ service.website_url }}
+    
+
+    <h3>Vendor</h3>
+    
+        {{ service.vendor }}
+    
+
+    <h3>ArchiveDate</h3>
+    
+        {{ service.archiveDate }}
+    
+
+<a class='btn btn-default btn-sm' href='{{ service.uri }}/edit'>
+    Edit
+</a>
+{{> _footer }}

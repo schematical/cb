@@ -1,0 +1,65 @@
+{{> _header }}
+{{> _navbar }}
+<div class="page-header">
+    <h1>{{ collection.name }}<small>{{{ collection.desc }}}</small></h1>
+</div>
+
+    <h3>Name</h3>
+    
+        {{ collection.name }}
+    
+
+    <h3>Namespace</h3>
+    
+        {{ collection.namespace }}
+    
+
+    <h3>Desc</h3>
+    
+        {{{ collection.desc }}}
+    
+
+    <h3>Original_img</h3>
+    
+        <img src="{{{ collection.original_img_s3.url }}}" />
+    
+
+    <h3>Thumb_img</h3>
+    
+        <img src="{{{ collection.thumb_img_s3.url }}}" />
+    
+
+    <h3>Website_url</h3>
+    
+        {{ collection.website_url }}
+    
+
+    <h3>Budget</h3>
+    
+        {{ collection.budget }}
+    
+
+    <h3>Guests</h3>
+    
+        {{ collection.guests }}
+    
+
+    <h3>City</h3>
+    
+        {{ collection.city }}
+    
+
+    <h3>Account</h3>
+    
+        {{ collection.account }}
+    
+
+    <h3>ArchiveDate</h3>
+    
+        {{ collection.archiveDate }}
+    
+
+<a class='btn btn-default btn-sm' href='{{ collection.uri }}/edit'>
+    Edit
+</a>
+{{> _footer }}

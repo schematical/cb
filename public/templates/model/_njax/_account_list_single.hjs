@@ -1,0 +1,45 @@
+<tr>
+    
+    
+    <td>
+        {{ email }}
+    </td>
+    
+
+    
+    
+    <td>
+        {{ name }}
+    </td>
+    
+
+    
+    
+    <td>
+        {{ namespace }}
+    </td>
+    
+
+    
+    
+    <td>
+        {{ active }}
+    </td>
+    
+
+    
+    
+    <td>
+        {{ forgot_pass_code }}
+    </td>
+    
+
+    
+    
+    <td>
+        <a class='btn btn-default btn-sm' href='{{ uri }}'>
+            View
+        </a>
+    </td>
+    
+</tr>

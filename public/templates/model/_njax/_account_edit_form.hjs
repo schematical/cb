@@ -1,0 +1,51 @@
+
+
+<form role="form" action='/{{ account._id }}' method='POST' enctype="multipart/form-data"  ng-controller="accountEditForm">
+    
+        
+            <div class="form-group">
+                <label for="email">email</label>
+                <input name="email" type="email" class="form-control" id="email" placeholder="Enter email" value="{{ account.email }}"  ng-model="email">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="name">name</label>
+                <input name="name" type="name" class="form-control" id="name" placeholder="Enter name" value="{{ account.name }}"  ng-model="name">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="namespace">namespace</label>
+                <input name="namespace" type="namespace" class="form-control" id="namespace" placeholder="Enter namespace" value="{{ account.namespace }}"  ng-model="namespace">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label for="active">
+                            <input name="active" type="checkbox"  id="active" ng-model="active" {{# account.active }}checked{{/ account.active }} /> function desc(description) {
+  this.description = description || '';
+  return this;
+}
+                        </label>
+                    </div>
+                </div>
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="forgot_pass_code">forgot_pass_code</label>
+                <input name="forgot_pass_code" type="forgot_pass_code" class="form-control" id="forgot_pass_code" placeholder="Enter forgot_pass_code" value="{{ account.forgot_pass_code }}"  ng-model="forgot_pass_code">
+            </div>
+        
+    
+
+
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>

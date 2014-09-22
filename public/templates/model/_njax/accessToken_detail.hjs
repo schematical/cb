@@ -1,0 +1,30 @@
+{{> _header }}
+{{> _navbar }}
+<div class="page-header">
+    <h1>{{ accessToken.name }}<small>{{{ accessToken.desc }}}</small></h1>
+</div>
+
+    <h3>Perms</h3>
+    
+        {{ accessToken.perms }}
+    
+
+    <h3>Token</h3>
+    
+        {{ accessToken.token }}
+    
+
+    <h3>Application</h3>
+    
+        {{ accessToken.application }}
+    
+
+    <h3>Account</h3>
+    
+        {{ accessToken.account }}
+    
+
+<a class='btn btn-default btn-sm' href='{{ accessToken.uri }}/edit'>
+    Edit
+</a>
+{{> _footer }}

@@ -1,0 +1,41 @@
+<!--<script src="/bower_components/angular/angular.js"></script>
+<script src="/bower_components/angular-route/angular-route.js"></script>
+<script src="/bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="/bower_components/angular-resource/angular-resource.js"></script>-->
+
+<script src="/js/app.js"></script>
+<script src="/js/directives.js"></script>
+<script src="/js/filters.js"></script>
+
+    <script src="/js/services/account.js"></script>
+    <script src="/js/controllers/account.js"></script>
+    <script src="/js/directives/account.js"></script>
+
+    <script src="/js/services/application.js"></script>
+    <script src="/js/controllers/application.js"></script>
+    <script src="/js/directives/application.js"></script>
+
+    <script src="/js/services/accessToken.js"></script>
+    <script src="/js/controllers/accessToken.js"></script>
+    <script src="/js/directives/accessToken.js"></script>
+
+    <script src="/js/services/requestCode.js"></script>
+    <script src="/js/controllers/requestCode.js"></script>
+    <script src="/js/directives/requestCode.js"></script>
+
+    <script src="/js/services/event.js"></script>
+    <script src="/js/controllers/event.js"></script>
+    <script src="/js/directives/event.js"></script>
+
+    <script src="/js/services/collection.js"></script>
+    <script src="/js/controllers/collection.js"></script>
+    <script src="/js/directives/collection.js"></script>
+
+    <script src="/js/services/vendor.js"></script>
+    <script src="/js/controllers/vendor.js"></script>
+    <script src="/js/directives/vendor.js"></script>
+
+    <script src="/js/services/service.js"></script>
+    <script src="/js/controllers/service.js"></script>
+    <script src="/js/directives/service.js"></script>
+

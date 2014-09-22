@@ -1,0 +1,94 @@
+
+
+<form role="form" action='{{ account.uri }}/collection/{{ collection._id }}' method='POST' enctype="multipart/form-data"  ng-controller="collectionEditForm">
+    
+        
+            <div class="form-group">
+                <label for="name">name</label>
+                <input name="name" type="name" class="form-control" id="name" placeholder="Enter name" value="{{ collection.name }}"  ng-model="name">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="namespace">namespace</label>
+                <input name="namespace" type="namespace" class="form-control" id="namespace" placeholder="Enter namespace" value="{{ collection.namespace }}"  ng-model="namespace">
+            </div>
+        
+    
+        
+            <textarea id="desc" name="desc" class="form-control" rows="3"  ng-model="desc">{{ collection.desc}}</textarea>
+        
+    
+        
+            <div class="form-group">
+                <label for="original_img">original_img</label>
+                <input type="file" class="form-control" id="original_img" name="original_img" placeholder="Enter original_img" value="{{ collection.original_img }}">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="thumb_img">thumb_img</label>
+                <input type="file" class="form-control" id="thumb_img" name="thumb_img" placeholder="Enter thumb_img" value="{{ collection.thumb_img }}">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="website_url">website_url</label>
+                <input name="website_url" type="website_url" class="form-control" id="website_url" placeholder="Enter website_url" value="{{ collection.website_url }}"  ng-model="website_url">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="budget">budget</label>
+                <input name="budget" type="budget" class="form-control" id="budget" placeholder="Enter budget" value="{{ collection.budget }}"  ng-model="budget">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="guests">guests</label>
+                <input name="guests" type="guests" class="form-control" id="guests" placeholder="Enter guests" value="{{ collection.guests }}"  ng-model="guests">
+            </div>
+        
+    
+        
+            {{^ city }}
+            <div class="form-group">
+                <label for="city">city</label>
+                <select id="city" name='city' value='{{ collection.city }}'  ng-model="city">
+                    {{# citys }}
+                        <option {{# _selected }}selected='true'{{/ _selected}} value='{{ _id }}'>{{ name }}</option>
+                    {{/ citys }}
+                </select>
+            </div>
+             {{/ city }}
+        
+    
+        
+            {{^ account }}
+            <div class="form-group">
+                <label for="account">account</label>
+                <select id="account" name='account' value='{{ collection.account }}'  ng-model="account">
+                    {{# accounts }}
+                        <option {{# _selected }}selected='true'{{/ _selected}} value='{{ _id }}'>{{ name }}</option>
+                    {{/ accounts }}
+                </select>
+            </div>
+             {{/ account }}
+        
+    
+        
+            <div class="form-group">
+                <label for="archiveDate">archiveDate</label>
+                <input name="archiveDate" type="archiveDate" class="form-control" id="archiveDate" placeholder="Enter archiveDate" value="{{ collection.archiveDate }}"  ng-model="archiveDate">
+            </div>
+        
+    
+
+
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>

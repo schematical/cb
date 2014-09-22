@@ -1,0 +1,60 @@
+{{> _header }}
+{{> _navbar }}
+<div class="page-header">
+    <h1>{{ application.name }}<small>{{{ application.desc }}}</small></h1>
+</div>
+
+    <h3>Namespace</h3>
+    
+        {{ application.namespace }}
+    
+
+    <h3>Name</h3>
+    
+        {{ application.name }}
+    
+
+    <h3>Desc</h3>
+    
+        {{{ application.desc }}}
+    
+
+    <h3>App_url</h3>
+    
+        {{ application.app_url }}
+    
+
+    <h3>Domain</h3>
+    
+        {{ application.domain }}
+    
+
+    <h3>Secret</h3>
+    
+        {{ application.secret }}
+    
+
+    <h3>Level</h3>
+    
+        {{ application.level }}
+    
+
+    <h3>Callback_url</h3>
+    
+        {{ application.callback_url }}
+    
+
+    <h3>Iframes</h3>
+    
+        {{ application.iframes }}
+    
+
+    <h3>Owner</h3>
+    
+        {{ application.owner }}
+    
+
+<a class='btn btn-default btn-sm' href='{{ application.uri }}/edit'>
+    Edit
+</a>
+{{> _footer }}

@@ -1,0 +1,52 @@
+{{> _header }}
+
+{{> _navbar }}
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            {{> _account_edit_form }}
+        </div>
+        <div class="col-md-8 col-md-offset-1">
+            <table class="table">
+                <tr>
+                    
+                        
+                            <th>
+                                email
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                name
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                namespace
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                active
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                forgot_pass_code
+                            </th>
+                        
+                    
+                </tr>
+                {{# accounts }}
+                  {{> _account_list_single }}
+                {{/ accounts }}
+            </table>
+        </div>
+    </div>
+</div>
+{{> _footer }}
+

@@ -1,0 +1,48 @@
+
+
+<form role="form" action='/access_tokens/{{ accessToken._id }}' method='POST' enctype="multipart/form-data"  ng-controller="accessTokenEditForm">
+    
+        
+            <div class="form-group">
+                <label for="perms">perms</label>
+                <input name="perms" type="perms" class="form-control" id="perms" placeholder="Enter perms" value="{{ accessToken.perms }}"  ng-model="perms">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="token">token</label>
+                <input name="token" type="token" class="form-control" id="token" placeholder="Enter token" value="{{ accessToken.token }}"  ng-model="token">
+            </div>
+        
+    
+        
+            {{^ application }}
+            <div class="form-group">
+                <label for="application">application</label>
+                <select id="application" name='application' value='{{ accessToken.application }}'  ng-model="application">
+                    {{# applications }}
+                        <option {{# _selected }}selected='true'{{/ _selected}} value='{{ _id }}'>{{ name }}</option>
+                    {{/ applications }}
+                </select>
+            </div>
+             {{/ application }}
+        
+    
+        
+            {{^ account }}
+            <div class="form-group">
+                <label for="account">account</label>
+                <select id="account" name='account' value='{{ accessToken.account }}'  ng-model="account">
+                    {{# accounts }}
+                        <option {{# _selected }}selected='true'{{/ _selected}} value='{{ _id }}'>{{ name }}</option>
+                    {{/ accounts }}
+                </select>
+            </div>
+             {{/ account }}
+        
+    
+
+
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>

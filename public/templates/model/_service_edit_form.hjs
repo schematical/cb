@@ -1,0 +1,67 @@
+
+
+<form role="form" action='/services/{{ service._id }}' method='POST' enctype="multipart/form-data"  ng-controller="serviceEditForm">
+    
+        
+            <div class="form-group">
+                <label for="name">name</label>
+                <input name="name" type="name" class="form-control" id="name" placeholder="Enter name" value="{{ service.name }}"  ng-model="name">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="namespace">namespace</label>
+                <input name="namespace" type="namespace" class="form-control" id="namespace" placeholder="Enter namespace" value="{{ service.namespace }}"  ng-model="namespace">
+            </div>
+        
+    
+        
+            <textarea id="desc" name="desc" class="form-control" rows="3"  ng-model="desc">{{ service.desc}}</textarea>
+        
+    
+        
+            <div class="form-group">
+                <label for="original_img">original_img</label>
+                <input type="file" class="form-control" id="original_img" name="original_img" placeholder="Enter original_img" value="{{ service.original_img }}">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="thumb_img">thumb_img</label>
+                <input type="file" class="form-control" id="thumb_img" name="thumb_img" placeholder="Enter thumb_img" value="{{ service.thumb_img }}">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="website_url">website_url</label>
+                <input name="website_url" type="website_url" class="form-control" id="website_url" placeholder="Enter website_url" value="{{ service.website_url }}"  ng-model="website_url">
+            </div>
+        
+    
+        
+            {{^ vendor }}
+            <div class="form-group">
+                <label for="vendor">vendor</label>
+                <select id="vendor" name='vendor' value='{{ service.vendor }}'  ng-model="vendor">
+                    {{# vendors }}
+                        <option {{# _selected }}selected='true'{{/ _selected}} value='{{ _id }}'>{{ name }}</option>
+                    {{/ vendors }}
+                </select>
+            </div>
+             {{/ vendor }}
+        
+    
+        
+            <div class="form-group">
+                <label for="archiveDate">archiveDate</label>
+                <input name="archiveDate" type="archiveDate" class="form-control" id="archiveDate" placeholder="Enter archiveDate" value="{{ service.archiveDate }}"  ng-model="archiveDate">
+            </div>
+        
+    
+
+
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>

@@ -1,0 +1,20 @@
+{{> _header }}
+{{> _navbar }}
+<div class="page-header">
+    <h1>{{ requestCode.name }}<small>{{{ requestCode.desc }}}</small></h1>
+</div>
+
+    <h3>Code</h3>
+    
+        {{ requestCode.code }}
+    
+
+    <h3>Application</h3>
+    
+        {{ requestCode.application }}
+    
+
+<a class='btn btn-default btn-sm' href='{{ requestCode.uri }}/edit'>
+    Edit
+</a>
+{{> _footer }}

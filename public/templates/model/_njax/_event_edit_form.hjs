@@ -1,0 +1,56 @@
+
+
+<form role="form" action='/events/{{ event._id }}' method='POST' enctype="multipart/form-data"  ng-controller="eventEditForm">
+    
+        
+            <div class="form-group">
+                <label for="event_namespace">event_namespace</label>
+                <input name="event_namespace" type="event_namespace" class="form-control" id="event_namespace" placeholder="Enter event_namespace" value="{{ event.event_namespace }}"  ng-model="event_namespace">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="short_namespace">short_namespace</label>
+                <input name="short_namespace" type="short_namespace" class="form-control" id="short_namespace" placeholder="Enter short_namespace" value="{{ event.short_namespace }}"  ng-model="short_namespace">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="entity_url">entity_url</label>
+                <input name="entity_url" type="entity_url" class="form-control" id="entity_url" placeholder="Enter entity_url" value="{{ event.entity_url }}"  ng-model="entity_url">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="data">data</label>
+                <input name="data" type="data" class="form-control" id="data" placeholder="Enter data" value="{{ event.data }}"  ng-model="data">
+            </div>
+        
+    
+        
+            {{^ application }}
+            <div class="form-group">
+                <label for="application">application</label>
+                <select id="application" name='application' value='{{ event.application }}'  ng-model="application">
+                    {{# applications }}
+                        <option {{# _selected }}selected='true'{{/ _selected}} value='{{ _id }}'>{{ name }}</option>
+                    {{/ applications }}
+                </select>
+            </div>
+             {{/ application }}
+        
+    
+        
+            <div class="form-group">
+                <label for="accounts">accounts</label>
+                <input name="accounts" type="accounts" class="form-control" id="accounts" placeholder="Enter accounts" value="{{ event.accounts }}"  ng-model="accounts">
+            </div>
+        
+    
+
+
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>

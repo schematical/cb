@@ -1,0 +1,46 @@
+{{> _header }}
+
+{{> _navbar }}
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            {{> _accessToken_edit_form }}
+        </div>
+        <div class="col-md-8 col-md-offset-1">
+            <table class="table">
+                <tr>
+                    
+                        
+                            <th>
+                                perms
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                token
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                application
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                account
+                            </th>
+                        
+                    
+                </tr>
+                {{# accessTokens }}
+                  {{> _accessToken_list_single }}
+                {{/ accessTokens }}
+            </table>
+        </div>
+    </div>
+</div>
+{{> _footer }}
+

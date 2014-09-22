@@ -1,0 +1,88 @@
+{{> _header }}
+
+{{> _navbar }}
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            {{> _collection_edit_form }}
+        </div>
+        <div class="col-md-8 col-md-offset-1">
+            <table class="table">
+                <tr>
+                    
+                        
+                            <th>
+                                name
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                namespace
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                desc
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                original_img
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                thumb_img
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                website_url
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                budget
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                guests
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                city
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                account
+                            </th>
+                        
+                    
+                        
+                            <th>
+                                archiveDate
+                            </th>
+                        
+                    
+                </tr>
+                {{# collections }}
+                  {{> _collection_list_single }}
+                {{/ collections }}
+            </table>
+        </div>
+    </div>
+</div>
+{{> _footer }}
+
